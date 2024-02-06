@@ -822,7 +822,7 @@ class Helpers
     public static function getFileContent($uri, $context = null, $offset = 0, $maxlen = null)
     {
         $result = false;
-        $headers = null;
+        $headers = true;
         list($proto, $host, $path, $file) = Helpers::explode_url($uri);
         $is_local_path = ($proto == "" || $proto === "file://");
 
@@ -833,9 +833,9 @@ class Helpers
                 $uri = Helpers::encodeURI($uri);
             }
             if (isset($maxlen)) {
-                $result = file_get_contents($uri, null, $context, $offset, $maxlen);
+                $result = file_get_contents($uri, true, $context, $offset, $maxlen);
             } else {
-                $result = file_get_contents($uri, null, $context, $offset);
+                $result = file_get_contents($uri, true, $context, $offset);
             }
             if (isset($http_response_header)) {
                 $headers = $http_response_header;

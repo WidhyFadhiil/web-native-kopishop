@@ -7,7 +7,7 @@ if(isset($_POST['simpan']))
     if ($query_insert) {
         echo "<script>Swal.fire('Sukses','Data Berhasil Ditambahkan','success')
 		.then(function(){
-		window.location = window.location = 'admin.php?halaman=kategori_barang';
+		window.location = window.location = 'manager.php?halaman=kategori_barang';
 		});</script>";
     }
 }
@@ -21,7 +21,7 @@ if(isset($_POST['update']))
     if ($query_update) {
 		echo "<script>Swal.fire('Sukses','Data Berhasil Diupdate','success')
 		.then(function(){
-		window.location = window.location = 'admin.php?halaman=kategori_barang';
+		window.location = window.location = 'manager.php?halaman=kategori_barang';
 		});</script>";
     }
 }
@@ -31,7 +31,7 @@ if (isset($_GET['hapus'])) {
     if ($query_hapus) {
 		echo "<script>Swal.fire('Sukses','Data Berhasil Dihapus','success')
 		.then(function(){
-		window.location = window.location = 'admin.php?halaman=kategori_barang';
+		window.location = window.location = 'manager.php?halaman=kategori_barang';
 		});</script>";
     }
 }

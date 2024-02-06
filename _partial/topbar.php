@@ -1,5 +1,5 @@
 <nav style="background-color:#0dcaf0" class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-<a><marquee><span width="100%">Selamat Datang Admin di The Gymbo Caffe<span></marquee></a>
+<a align="center"><marquee><span width="100%">Selamat Datang Admin di The Gymbo Caffe<span></marquee></a>
 
     <!-- Sidebar Toggle (Topbar) -->
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
